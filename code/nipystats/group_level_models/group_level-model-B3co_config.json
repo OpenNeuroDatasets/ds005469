@@ -1,0 +1,25 @@
+{
+ "model": "B3co",
+ "covariates": [
+   "group"
+ ],
+ "contrasts": [
+  "control",
+  "military",
+  "control-military",
+  "control+military"
+ ],
+ "tasks": [
+  "cofree",
+  "cocoer"
+ ],
+ "first_level_model": "Magency",
+ "first_level_contrast": "Agency",
+ "smoothing_fwhm": 8,
+ "paired": true,
+ "task_weights": {
+                  "cofree": 1,
+                  "cocoer": 1
+                 },
+ "custom_z_threshold": 4.61293
+}
