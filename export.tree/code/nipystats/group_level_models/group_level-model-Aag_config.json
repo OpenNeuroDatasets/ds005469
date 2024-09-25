@@ -1,0 +1,21 @@
+{
+ "model": "Maag",
+ "covariates": [
+   "group"
+ ],
+ "contrasts": [
+  "control",
+  "military",
+  "control+military",
+  "control-military"
+ ],
+ "first_level_model": "Maag",
+ "concat_tasks": "agfreeagcoer",
+ "first_level_contrast": "agfree-agcoer",
+ "tasks": [
+   "agfree",
+   "agcoer"
+ ],
+ "smoothing_fwhm": 8,
+ "custom_z_threshold": 4.56697
+}

@@ -1,0 +1,33 @@
+{
+ "model": "mAag",
+ "model_description": "Agent only - We include noise effects (audio, ratingscale) and concat the tasks (which introduced as session-effect regressor)",
+ "trials_type": [
+  "audio",
+  "ratingscale"
+ ],
+ "contrasts": null,
+ "tasks": [
+  "agfree",
+  "agcoer"
+ ],
+ "first_level_options": {
+  "slice_time_ref": 0.5,
+  "smoothing_fwhm": 0,
+  "noise_model": "ar1",
+  "signal_scaling": [
+   0,
+   1
+  ],
+  "hrf_model": "SPM",
+  "high_pass": 0.0078125,
+  "drift_model": "polynomial",
+  "minimize_memory": false,
+  "standardize": false
+ },
+ "concatenation_pairs": [
+  [
+   "agfree",
+   "agcoer"
+  ]
+ ]
+}
